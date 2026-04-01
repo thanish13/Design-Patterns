@@ -1,6 +1,6 @@
 package org.t13.app.factory;
 
-public class CarTransport implements TransportFactory{
+public class CarTransportFactory implements TransportFactory{
 
     @Override
     public void deliver() {
