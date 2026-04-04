@@ -10,5 +10,6 @@ public class CircleClient {
 
     public void run() {
         System.out.println("Circle run");
+        circle.area();
     }
 }
