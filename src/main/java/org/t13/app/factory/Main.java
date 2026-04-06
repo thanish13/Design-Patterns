@@ -3,9 +3,12 @@ package org.t13.app.factory;
 public class Main{
 
     public static void main() {
-        TransportApp carApp = new TransportApp(new CarTransportFactory());
-        carApp.deliver();
-        TransportApp busApp = new TransportApp(new BusTransportFactory());
-        busApp.deliver();
+
+        TransportFactory carTransportFactory = new CarTransportFactory();
+        Transport car = carTransportFactory.createTransport();
+        car.deliver();
+        TransportFactory busTransportFactory = new BusTransportFactory();
+        Transport bus = busTransportFactory.createTransport();
+        bus.deliver();
     }
 }
