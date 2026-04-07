@@ -11,9 +11,9 @@ public class CustomerRegistry {
         this.customerMap = new HashMap<>();
     }
 
-    public Customer addCustomer(Customer customer) {
+    public void addCustomer(Customer customer) {
         System.out.println("Adding customer " + customer);
-        return customerMap.put(customer.id(), customer);
+        customerMap.put(customer.id(), customer);
     }
 
     public Customer getCustomer(String id) {
